@@ -14,18 +14,26 @@ const About: React.FC = () => {
                 alt="Wesley Guerra" />
 
             <h1>Olá, Sou Wesley</h1>
-            <p> Natural de Salvador/BA, Encantado pelo desenvolvimento front-end e Back-end, mantém-se aprimorando as habilidades nesta área com a construção de diversos projetos,
+            <p> 
+
+            Apaixonado pelas melhores tecnologias de desenvolvimento back-end, front-end e mobile,e mantenho aprimorando as habilidades nesta área com a construção de diversos projetos, envolvendo as principais tecnologias (HTML5, CSS3 ,Bootstrap, JS, React, React-Native, Node.js, Postgreql: posterbird, JSON etc). Acompanhe esses projetos no GitHup. Formado em Análise e Desenvolvimento de Sistemas.
+            Proativo e sempre buscando novos conhecimentos e desafios 🚀. 
+                
+                
+                
+                
+            {/* Natural de Salvador/BA, Encantado pelo desenvolvimento front-end e Back-end, mantém-se aprimorando as habilidades nesta área com a construção de diversos projetos,
             envolvendo as principais tecnologias (HTML5, CSS3 Bootstrap, JS, React, React-Native, Node.js, Postgreql: posterbird, JSON e etc). Acompanhe esses projetos no GitHub.
 
             Formado em Análise e Desenvolvimento de Sistemas.
-            Atualmente, fazendo divesos cursos na aréa em busca de novos conhecimentos.
+            Atualmente, fazendo divesos cursos na aréa em busca de novos conhecimentos. */}
 
-{/* Não apenas de programação vive um mortal:
-Sou um estudioso curioso de história
-Apaixonado por carnaval (O de Salvador é claro!!)
-Dançarino nas horas vagas
-Aquela saídera com os amigos por que ninguém é de ferro...
-Se você quiser saber mais sobre mim ou entrar em contato: */}
+            {/* Não apenas de programação vive um mortal:
+            Sou um estudioso curioso de história
+            Apaixonado por carnaval (O de Salvador é claro!!)
+            Dançarino nas horas vagas
+            Aquela saídera com os amigos por que ninguém é de ferro...
+            Se você quiser saber mais sobre mim ou entrar em contato: */}
             </p>
             <span>
                 Se você quiser saber mais sobre mim ou entrar em contato:
