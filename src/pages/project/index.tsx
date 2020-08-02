@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Container } from './styles';
+import { Title, Cards } from './styles';
 import aluraImg from '../../assets/alura.png'
 import gobaberImg from '../../assets/gobaber.png';
 import ecoleta from '../../assets/ecoleta.png';
@@ -14,68 +14,53 @@ const Project: React.FC = () => {
 
     return (
         <>
-        <Header />
+            <Header />
             <Title>Explore repositórios no Github.</Title>
-            <Container>
+            <Cards>
+
                 <div className="card">
-                    <a href="https://github.com/Wesleygmssa/aluraflix" target="_blank">
-                        <div className="imgtopo">
-                            <img src={aluraImg} alt="" />
-                        </div>
-                    </a>
-                    <h3>AluraFlix</h3>
-                    <p>Projeto feito durante a Imersão React da Alura, Projeto baseado na netflix</p>
+                    <div className="cardimg">
+                        <img src={aluraImg} alt="" />
+                    </div>
+                    <div className="card-content">
+                            <h3>AluraFlix</h3>
+                             <p>Projeto feito durante a Imersão React da Alura, Projeto baseado na netflix</p>
+                    </div>
                     <div className="grupButton">
-                        <a href="https://aluraflix-gules.vercel.app/">Visitar</a>
-                        <a href="https://github.com/Wesleygmssa/aluraflix">GitHub</a>
+                        <a className="ButtonLink" href="https://aluraflix-gules.vercel.app/" target="_blank">Visitar</a>
+                        <a className="ButtonLink" href="https://github.com/Wesleygmssa/aluraflix" target="_blank">GitHub</a>
                     </div>
                 </div>
 
                 <div className="card">
-                    <a href="https://github.com/Wesleygmssa/gobaber-web" target="_blank">
-                        <div className="imgtopo">
-                            <img src={gobaberImg} alt="" />
-                        </div>
-                    </a>
-                    <h3>Gobarber</h3>
-                    <p>Curso da rocketseat utilizando as tecnologias mais avanças para construção do sistema de agendamento de barbearia.</p>
+                    <div className="cardimg">
+                        <img src={gobaberImg} alt="" />
+                    </div>
+                    <div className="card-content">
+                            <h3>Gobarber</h3>
+                             <p>Curso de rocketseat usando como tecnologias mais avançadas para a construção do sistema de agendamento de barbearia.</p>
+                    </div>
                     <div className="grupButton">
-                        <a href="https://aluraflix-gules.vercel.app/">Visitar</a>
-                        <a href="https://github.com/Wesleygmssa/aluraflix">GitHub</a>
+                        <a className="ButtonLink" href="https://github.com/Wesleygmssa/gobaber-web" target="_blank">GitHub</a>
                     </div>
                 </div>
-
 
                 <div className="card">
-                    <a href="https://github.com/Wesleygmssa/aluraflix" target="_blank">
-                        <div className="imgtopo">
-                            <img src={ecoleta} alt="" />
-                        </div>
-                    </a>
-                    <h3>Ecoleta</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <div className="cardimg">
+                        <img src={ecoleta} alt="" />
+                    </div>
+                    <div className="card-content">
+                            <h3>Ecoleta</h3>
+                             <p>Este é um repositório da Semana do Próximo Nível # 1 | Curso inicial. O objetivo deste repositório é analisar e comparar a evolução do meu aprendizado.</p>
+                    </div>
                     <div className="grupButton">
-                        <a href="https://aluraflix-gules.vercel.app/">Visitar</a>
-                        <a href="https://github.com/Wesleygmssa/aluraflix">GitHub</a>
+                        <a className="ButtonLink" href="https://github.com/Wesleygmssa/nlw1-booster" target="_blank">GitHub</a>
                     </div>
                 </div>
 
+             
 
-                <div className="card">
-                    <a href="https://github.com/Wesleygmssa/aluraflix" target="_blank">
-                        <div className="imgtopo">
-                            <img src={blindspot} alt="" />
-                        </div>
-                    </a>
-                    <h3>BlindSpot</h3>
-                    <p>Projeto pessoal para colocar em pratica os conhecimentos adiquirido.</p>
-                    <div className="grupButton">
-                        <a href="https://aluraflix-gules.vercel.app/">Visitar</a>
-                        <a href="https://github.com/Wesleygmssa/aluraflix">GitHub</a>
-                    </div>
-                </div>
-              
-            </Container>
+            </Cards>
             <Footer />
 
         </>
