@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 const ButtonLink = styled.a`
  color: var(--white);
- border: 1px solid var(--white);
+ border: 1px solid #fff;
  box-sizing: border-box;
  cursor: pointer;
- padding: 16px 24px;
+ padding: 16px 16px;
  font-style: normal;
  font-weight: bold;
  font-size: 16px;

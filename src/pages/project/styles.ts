@@ -21,13 +21,14 @@ padding: 5px;
 height: 100%;
 
 .card{
+    background: #f4f4f4;
     max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction:column;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding:8px;
     margin-left: 5px;
@@ -35,10 +36,11 @@ height: 100%;
     margin-top: 10px;
  
 
-    &:hover{
+    /* &:hover{
         background: #e4e4e4;
 
-    }
+    } */
+
  
 
     a{
@@ -72,10 +74,26 @@ height: 100%;
     }
 
     p{
+        text-align:justify;
+        font-weight:500;
         padding: 8px;
-        color: #727167;
+        color: #3a3a3a;
         font-size: 16px;
      
     }
+
+    .grupButton{
+        display: flex;
+
+        a + a{
+            margin-left: 8px;
+        }
+
+        a{
+            background-color: #f2f2f2;
+        }
 }
+
+    }
+       
 `;
