@@ -21,11 +21,19 @@ export const Cards = styled.div`
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 8px;
+
+    -webkit-box-shadow: 3px 9px 29px -13px rgba(0,0,0,0.52);
+    -moz-box-shadow: 3px 9px 29px -13px rgba(0,0,0,0.52);
+    box-shadow: 3px 9px 29px -13px rgba(0,0,0,0.52);
     
     .cardimg{
         position: relative;
+        border-radius:8px;
+      
+    
       
         img{
+            border-radius:8px;
             width: 100%;
             height: 150px;
           
