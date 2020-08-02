@@ -1,49 +1,6 @@
 
 import styled from 'styled-components'
 
-export const Header = styled.header`
-    width: 100%;
-    padding: 30px;
-    display:flex;
-
-    
-    div{
-        width:100%;
-        flex:1px;
-    }
-
-    img{
-        width:50px;
-        height:50px;
-       
-    }
-
-    div + div{
-        flex:999;
-        justify-content:center;
-        justify-items: center;
-        text-align:center;
-    }
-
-    a{
-        line-height: 50px;
-        font-size: 12px;
-        text-decoration:none;
-        font-weight: bold;
-        color:  #3a3a3a;
-        letter-spacing: 2px;
-       
-        
-        &:hover{
-            transition:  0.5s;
-            opacity:0.7;
-        } 
-
-        & + a{
-            margin-left: 16px;
-        }   
-    }
-`
 
 export const Banner = styled.section `
     height: 100%;
@@ -84,33 +41,3 @@ span{
 
 `
 
-export const Footer = styled.footer`
-
-    margin: 0 auto;
-    display:flex;
-    justify-content:center;
-    padding: 5px;
-    position:relative;
-
-   
-    
-    a{
-        line-height: 50px;
-        font-size: 12px;
-        text-decoration:none;
-        font-weight: bold;
-        color:  #3a3a3a;
-
-        letter-spacing: 2px;
-
-        & + a{
-            margin-left: 16px;
-        }
-
-        &:hover{
-            transition:  0.5s;
-            opacity:0.7;
-        } 
-
-    }
-`;

@@ -1,19 +1,12 @@
 import React from 'react';
-import logoImg from '../../assets/logo.svg';
-import logo from '../../assets/logo.png';
-import {Link} from 'react-router-dom';
-import { Header, Banner, Footer } from './styles';
 
+import { Banner} from './styles';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 const Home: React.FC = () => {
     return <>
-        <Header>
-            <img src={logo} alt="Github Explorer" />
-            <div>
-                <Link to="/about">SOBRE</Link>
-                <Link to="/project">PROJETOS</Link>
-            </div>
-
-        </Header>
+        
+        <Header />
         <Banner>
             <div>
                 <h1>Olá, Sou Wesley</h1>
@@ -22,12 +15,7 @@ const Home: React.FC = () => {
 
         </Banner>
 
-        <Footer>
-            <a href="https://twitter.com/guerra_ssa" target="_blank">TWITTER</a>
-            <a href="https://github.com/Wesleygmssa" target="_blank">GITHUB</a>
-            <a href="https://www.linkedin.com/in/wesleyguerra09/" target="_blank">LINKEDIN</a>
-
-        </Footer>
+        <Footer/>
 
     </>
 }
