@@ -1,10 +1,15 @@
-import React from 'react';
+import React,{LinkHTMLAttributes} from 'react';
 import ButtonLink from './styles';
 
-const Button: React.FC = (props) =>{
+interface Linka extends LinkHTMLAttributes<HTMLLinkElement>{ 
+    href:string ;
+   
+}
+
+const Button:React.FC<Linka> = ({href, children}) =>{
     return(
         <ButtonLink >
-            {props.children}
+            {children}
         </ButtonLink>
     )
 }
