@@ -74,34 +74,7 @@ const Project: React.FC = () => {
                         <a href="https://github.com/Wesleygmssa/aluraflix">GitHub</a>
                     </div>
                 </div>
-
-                <div className="card">
-                    <a href="https://github.com/Wesleygmssa/aluraflix" target="_blank">
-                        <div className="imgtopo">
-                            <img src={aluraImg} alt="" />
-                        </div>
-                    </a>
-                    <h3>Ecoleta</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <div className="grupButton">
-                        <a href="https://aluraflix-gules.vercel.app/">Visitar</a>
-                        <a href="https://github.com/Wesleygmssa/aluraflix">GitHub</a>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <a href="https://github.com/Wesleygmssa/aluraflix" target="_blank">
-                        <div className="imgtopo">
-                            <img src={aluraImg} alt="" />
-                        </div>
-                    </a>
-                    <h3>Ecoleta</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <div className="grupButton">
-                        <a href="https://aluraflix-gules.vercel.app/">Visitar</a>
-                        <a href="https://github.com/Wesleygmssa/aluraflix">GitHub</a>
-                    </div>
-                </div>
+              
             </Container>
             <Footer />
 
