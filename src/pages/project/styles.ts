@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import {shade} from 'polished';
+import { shade } from 'polished';
 
 
 
-export const Title = styled.h1 `
+export const Title = styled.h1`
 
 color: #3a3a3a;
 max-width: 350px;
@@ -12,7 +12,7 @@ margin-bottom: 40px;
 `
 
 
-export const Container = styled.div `
+export const Container = styled.div`
 
 display: flex;
 flex-wrap: wrap;
@@ -69,16 +69,16 @@ height: 100%;
 
     
     h3{
-        padding: 16px 16px;
+     
         font-size:24px;
     }
 
     p{
         text-align:justify;
         font-weight:500;
-        padding: 8px;
         color: #3a3a3a;
         font-size: 16px;
+        padding: 16px 16px;
      
     }
 
@@ -90,7 +90,26 @@ height: 100%;
         }
 
         a{
-            background-color: #f2f2f2;
+           
+            color: var(--white);
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            cursor: pointer;
+            padding: 16px 16px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            outline: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: opacity .3s;
+&:hover,
+&:focus {
+ opacity: .5;
+}
+            
+
         }
 }
 
