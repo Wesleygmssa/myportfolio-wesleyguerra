@@ -12,12 +12,20 @@ export const Cards = styled.div`
  display: flex;
  flex-wrap: wrap;
  height: 100vh;
+ justify-content: center;
+
  
 
 .card{
+    & + .card{
+       
+    }
+   
     width: 300px;
     max-height: 420px;
     border: 1px solid #ddd;
+    margin-top: 16px;
+    margin-bottom: 16px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 8px;

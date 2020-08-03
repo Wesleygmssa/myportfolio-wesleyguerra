@@ -25,6 +25,7 @@ export default createGlobalStyle`
         position:relative;
         max-width: 960px;
         margin: 0 auto;
+        /* border: 1px solid */
         /* padding: 40px 20px;  */
     }
     button{

@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const FooterBase = styled.footer`
 
-    margin: 0 auto;
+    margin-top: auto;
     display:flex;
     justify-content:center;
     padding: 5px;
     position:relative;
+  
 
    
     
