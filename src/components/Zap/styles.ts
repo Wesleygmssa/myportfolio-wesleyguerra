@@ -5,8 +5,10 @@ export const IconZap = styled.footer`
   bottom: 2%;
   z-index: 4;
   right: 25px;
+  border-radius: 50%;
 
   img {
-    width: 70px;
+    width: 50px;
+    border-radius: 50%;
   }
 `;
