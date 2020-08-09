@@ -1,8 +1,5 @@
 import React from "react";
 import { Banner } from "./styles";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Zap from "../../components/Zap";
 import PageDefault from "../../components/PageDefault";
 
 const Home: React.FC = () => {
