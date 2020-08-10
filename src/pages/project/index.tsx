@@ -17,7 +17,7 @@ const Project: React.FC = () => {
   const [projects, setProjects] = useState<Repository[]>([]);
 
   useEffect(() => {
-    axios.get(`https://devportf.herokuapp.com/projects/`).then((response) => {
+    api.get(`/projects/`).then((response) => {
       setProjects(response.data);
     });
   }, []);

@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const URL_BACKEND_TOP = window.location.hostname.includes("localhost")
-  ? "http://localhost:8080"
-  : "https://devportf.herokuapp.com";
+let URL_BACKEND_TOP = window.location.hostname.includes("localhost")
+  ? "https://devportf.herokuapp.com"
+  : "http://localhost:8080";
 
 const api = axios.create({
   baseURL: URL_BACKEND_TOP,

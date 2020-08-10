@@ -1,25 +1,31 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Footer from "../Footer";
 import Header from "../Header";
 import Zap from "../Zap";
 
-// const Main = styled.main`
-//   background-color: var(--black);
-//   color: var(--white);
-//   flex: 1;
-//   padding-top: 50px;
-//   padding-left: 5%;
-//   padding-right: 5%;
-// `;
+const apperFromCenter = keyframes`
+ from{
+   opacity: 0;
+   transform: translateX(-20px);
+ }
+ to{
+   opacity: 1;
+   transform: translateX(0px);
+ }
+`;
+
+const AnimationContainer = styled.div`
+  animation: ${apperFromCenter} 2s;
+`;
 
 const PageDefault: React.FC = ({ children }) => {
   return (
     <>
       <Header />
-      {children}
-      <Footer />
+      <AnimationContainer>{children}</AnimationContainer>
       <Zap />
+      <Footer />
     </>
   );
 };
