@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import githubBackgourn from '../assets/github-background.svg';
+import { createGlobalStyle } from "styled-components";
+import githubBackgourn from "../assets/github-background.svg";
 
 export default createGlobalStyle`
     *{
@@ -14,6 +14,7 @@ export default createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         height: 100%;
         position:relative;
+       
     }
 
     body , input , button{
@@ -23,8 +24,9 @@ export default createGlobalStyle`
 
     #root{
         position:relative;
-        max-width: 960px;
+        max-width: 980px;
         margin: 0 auto;
+        height:100%;
         /* border: 1px solid */
         /* padding: 40px 20px;  */
     }

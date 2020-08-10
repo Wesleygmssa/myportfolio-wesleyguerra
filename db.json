@@ -12,7 +12,8 @@
       "id": "2",
       "img": "https://github.com/Wesleygmssa/gobaber-web/raw/master/01.PNG",
       "title": "Gobarber",
-      "description": " Curso de rocketseat usando como tecnologias mais avançadas para a construção do sistema de agendamento de barbearia.",
+      "description": " Curso de rocketseat usando como tecnologias mais avançadas para a construção do sistema de agendamento de barbearia.",4
+      "visita": "",
       "github": "https://github.com/Wesleygmssa/gobaber-web"
     },
     {
@@ -20,6 +21,7 @@
       "img": "https://github.com/Wesleygmssa/ecoleta-nlw1-booster/raw/master/01.PNG",
       "title": "Ecoleta",
       "description": " Este é um repositório da Semana do Próximo Nível # 1 | Curso inicial. O objetivo deste repositório é analisar e comparar a evolução do meu aprendizado.",
+      "visita": "",
       "github": "https://github.com/Wesleygmssa/ecoleta-nlw1-booster"
     }
   ]

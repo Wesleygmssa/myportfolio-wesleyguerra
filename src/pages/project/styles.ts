@@ -10,15 +10,12 @@ export const Cards = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
 
   .card {
     .disabled {
       opacity: 0.5;
-    }
-
-    & + .card {
     }
 
     width: 300px;
@@ -28,8 +25,8 @@ export const Cards = styled.div`
     margin-bottom: 16px;
     margin-left: 5px;
     margin-right: 5px;
+    padding: 8px;
     border-radius: 8px;
-
     -webkit-box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
     box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
