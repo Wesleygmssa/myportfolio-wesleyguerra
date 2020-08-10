@@ -23,8 +23,8 @@ const PageDefault: React.FC = ({ children }) => {
   return (
     <>
       <Header />
-      <AnimationContainer>{children}</AnimationContainer>
       <Zap />
+      <AnimationContainer>{children}</AnimationContainer>
       <Footer />
     </>
   );
