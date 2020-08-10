@@ -2,7 +2,8 @@ import React from "react";
 import { Banner, Content, Form } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import { FiLogIn } from "react-icons/fi";
-import Footer from "../../components/Footer";
+import Input from "../../components/Input";
+import Button from "../../components/LinkButton";
 
 const About: React.FC = () => {
   return (
@@ -31,15 +32,16 @@ const About: React.FC = () => {
           {/* <Form>
             <h2>Se você quiser saber mais sobre mim ou entrar em contato:</h2>
 
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="E-mail" />
-            <input type="text" placeholder="(DD)9.xxxx-xxxx" />
+            <Input type="text" placeholder="Nome" />
+            <Input type="email" placeholder="E-mail" />
+            <Input type="text" placeholder="(DD)9.xxxx-xxxx" />
+
             <textarea placeholder="Digite o texto"></textarea>
 
-            <button type="submit">
+            <Button type="submit">
               <FiLogIn />
               Enviar
-            </button>
+            </Button>
           </Form> */}
         </Content>
       </PageDefault>

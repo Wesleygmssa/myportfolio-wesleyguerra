@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Title, Cards } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import api from "../../services/api";
-import axios from "axios";
+import ButtonLink from "../../components/LinkButton";
 
 interface Repository {
   id: string;
@@ -38,12 +38,8 @@ const Project: React.FC = () => {
                 <p>{project.description}</p>
               </div>
               <div className="grupButton">
-                <a className="ButtonLink" href={project.visita} target="_blank">
-                  Visitar
-                </a>
-                <a className="ButtonLink" href={project.github} target="_blank">
-                  GitHub
-                </a>
+                <ButtonLink href={project.visita}>Visitar</ButtonLink>
+                <ButtonLink href={project.github}>GitHub</ButtonLink>
               </div>
             </div>
           ))}
