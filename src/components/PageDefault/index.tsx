@@ -7,7 +7,7 @@ import Zap from "../Zap";
 const apperFromCenter = keyframes`
  from{
    opacity: 0;
-   transform: translateX(-20px);
+   transform: translateX(-50px);
  }
  to{
    opacity: 1;
