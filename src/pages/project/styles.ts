@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { shade } from "polished";
 
 export const Title = styled.h1`
   color: #3a3a3a;

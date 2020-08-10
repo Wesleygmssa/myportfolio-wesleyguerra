@@ -25,6 +25,7 @@ const Project: React.FC = () => {
     <>
       <PageDefault>
         <Title>Explore repositórios no Github.</Title>
+        {projects.length === 0 && <div>Loading...</div>}
         <Cards>
           {projects.map((project) => (
             <div key={project.id} className="card">
