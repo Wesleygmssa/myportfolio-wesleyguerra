@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Title, Cards } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import api from "../../services/api";
+import axios from "axios";
 
 interface Repository {
   id: string;
@@ -16,7 +17,7 @@ const Project: React.FC = () => {
   const [projects, setProjects] = useState<Repository[]>([]);
 
   useEffect(() => {
-    api.get(`projects/`).then((response) => {
+    axios.get(`https://devportf.herokuapp.com/projects/`).then((response) => {
       setProjects(response.data);
     });
   }, []);
