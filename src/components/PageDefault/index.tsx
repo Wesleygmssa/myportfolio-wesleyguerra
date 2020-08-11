@@ -7,7 +7,7 @@ import Zap from "../Zap";
 const apperFromCenter = keyframes`
  from{
    opacity: 0;
-   transform: translateX(-50px);
+   transform: translateX(0px);
  }
  to{
    opacity: 1;
@@ -16,7 +16,7 @@ const apperFromCenter = keyframes`
 `;
 
 const AnimationContainer = styled.div`
-  animation: ${apperFromCenter} 2s;
+  animation: ${apperFromCenter} 6s;
 `;
 
 const PageDefault: React.FC = ({ children }) => {

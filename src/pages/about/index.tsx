@@ -1,9 +1,7 @@
 import React from "react";
-import { Banner, Content, Form } from "./styles";
+import { Banner, Content } from "./styles";
 import PageDefault from "../../components/PageDefault";
-import { FiLogIn } from "react-icons/fi";
-import Input from "../../components/Input";
-import Button from "../../components/LinkButton";
+import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
@@ -27,22 +25,11 @@ const About: React.FC = () => {
               Sistemas. Proativo e sempre buscando novos conhecimentos e
               desafios 🚀.
             </p>
+            <span>
+              Se você quiser saber mais sobre mim ou entrar em contato:
+              <Link to="/contact/form"> clique aqui </Link>
+            </span>
           </Banner>
-
-          {/* <Form>
-            <h2>Se você quiser saber mais sobre mim ou entrar em contato:</h2>
-
-            <Input type="text" placeholder="Nome" />
-            <Input type="email" placeholder="E-mail" />
-            <Input type="text" placeholder="(DD)9.xxxx-xxxx" />
-
-            <textarea placeholder="Digite o texto"></textarea>
-
-            <Button type="submit">
-              <FiLogIn />
-              Enviar
-            </Button>
-          </Form> */}
         </Content>
       </PageDefault>
     </>

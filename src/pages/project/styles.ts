@@ -9,7 +9,7 @@ export const Cards = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
 
   .card {
