@@ -16,7 +16,7 @@ const apperFromCenter = keyframes`
 `;
 
 const AnimationContainer = styled.div`
-  animation: ${apperFromCenter} 3s;
+  animation: ${apperFromCenter} 1s;
 `;
 
 const PageDefault: React.FC = ({ children }) => {
