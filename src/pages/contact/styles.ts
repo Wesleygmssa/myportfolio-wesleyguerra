@@ -20,23 +20,6 @@ export const Form = Styled.form`
     color: #fff;
   }
 
-  input {
-    background: #232129;
-    border-radius: 10px;
-    border: 2px solid #232129;
-    padding: 16px;
-    width: 100%;
-    color: #fff;
-
-    & + input {
-      margin-top: 8px;
-    }
-
-    &::placeholder {
-      color: #666360;
-      font-size: 16px;
-    }
-  }
 
   textarea {
     margin-top: 8px;

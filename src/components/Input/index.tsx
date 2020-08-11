@@ -1,12 +1,17 @@
 import React, { InputHTMLAttributes } from "react";
+import { IconBaseProps } from "react-icons";
 import { Container } from "./styles";
 
-interface Inputprops extends InputHTMLAttributes<HTMLInputElement> {}
+interface Inputprops extends InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+  icon: React.ComponentType<IconBaseProps>;
+}
 
-const Input: React.FC<Inputprops> = (props) => {
+const Input: React.FC<Inputprops> = ({ icon: Icon, ...rest }) => {
   return (
     <Container>
-      <input type="text" {...props} />
+      {Icon && <Icon size={20} />}
+      <input {...rest} />
     </Container>
   );
 };

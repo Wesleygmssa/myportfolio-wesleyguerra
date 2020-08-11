@@ -42,5 +42,10 @@ export const Banner = styled.section`
     margin: 20px;
     margin-bottom: 0px;
     font-weight: bold;
+
+    a {
+      text-decoration: none;
+      color: #3cb062;
+    }
   }
 `;
