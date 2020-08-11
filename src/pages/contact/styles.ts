@@ -11,9 +11,10 @@ export const Container = Styled.div`
   border-radius: 8px;
   width: 100%;
   max-width: 700px;
-  height: 80vh;
+  height: 50vh;
   padding: 16px;
   margin-top: 24px;
+  margin-bottom: 10%;
 
   form{
     width: 100%;
