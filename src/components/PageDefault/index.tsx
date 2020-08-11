@@ -23,9 +23,9 @@ const PageDefault: React.FC = ({ children }) => {
   return (
     <>
       <Header />
-      <Zap />
       <AnimationContainer>{children}</AnimationContainer>
       <Footer />
+      <Zap />
     </>
   );
 };
