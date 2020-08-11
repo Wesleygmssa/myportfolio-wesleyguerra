@@ -1,7 +1,7 @@
 import Styled from "styled-components";
 import { shade } from "polished";
 
-export const Form = Styled.form`
+export const Container = Styled.div`
   background: #494949;
   display: flex;
   justify-content: center;
@@ -14,6 +14,10 @@ export const Form = Styled.form`
   height: 80vh;
   padding: 16px;
   margin-top: 24px;
+
+  form{
+    width: 100%;
+  }
 
   h1 {
     margin-bottom: 24px;
@@ -61,5 +65,3 @@ export const Form = Styled.form`
     }
   }
 `;
-
-export const Container = Styled.div``;
