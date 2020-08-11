@@ -45,7 +45,7 @@ export const Banner = styled.section`
 
     a {
       text-decoration: none;
-      color: #3cb062;
+      color: #8357e5;
     }
   }
 `;

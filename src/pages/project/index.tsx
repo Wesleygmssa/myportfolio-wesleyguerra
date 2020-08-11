@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Title, Cards } from "./styles";
 import PageDefault from "../../components/PageDefault";
 // import api from "../../services/api";

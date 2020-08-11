@@ -11,7 +11,7 @@ export const Container = Styled.div`
   border-radius: 8px;
   width: 100%;
   max-width: 700px;
-  height: 50vh;
+  height: 80vh;
   padding: 16px;
   margin-top: 24px;
   margin-bottom: 10%;
@@ -46,7 +46,7 @@ export const Container = Styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ff9000;
+    background: #8357E5;
     height: 56px;
     border-radius: 10px;
     border: 0;
@@ -62,7 +62,7 @@ export const Container = Styled.div`
     }
 
     &:hover {
-      background: ${shade(0.2, "#ff9000")};
+      background: ${shade(0.2, "#8357E5")};
     }
   }
 `;

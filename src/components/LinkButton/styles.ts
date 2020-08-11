@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.a`
   /* styles button link */
+  background-color: #8357e5;
   flex: 1;
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
-  color: var(--white);
-  border: 1px solid #bfbfbf;
+  color: #fff;
+  border: 1px solid #8357e5;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 16px;
