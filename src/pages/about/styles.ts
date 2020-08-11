@@ -22,6 +22,7 @@ export const Banner = styled.section`
     height: 300px;
     border-radius: 50%;
     position: relative;
+    border: 8px solid #8357e5;
   }
 
   h1 {

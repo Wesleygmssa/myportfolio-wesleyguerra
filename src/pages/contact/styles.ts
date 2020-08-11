@@ -10,8 +10,8 @@ export const Container = Styled.div`
   margin: 0 auto;
   border-radius: 8px;
   width: 100%;
-  max-width: 700px;
-  height: 80vh;
+  max-width: 600px;
+  height: 70vh;
   padding: 16px;
   margin-top: 24px;
   margin-bottom: 10%;

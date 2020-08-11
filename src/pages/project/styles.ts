@@ -4,12 +4,13 @@ export const Title = styled.h1`
   color: #3a3a3a;
   max-width: 350px;
   margin-bottom: 40px;
+  color: #8357e5;
 `;
 export const Cards = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
 
   .card {
