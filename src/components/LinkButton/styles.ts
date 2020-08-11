@@ -22,7 +22,7 @@ export const Container = styled.a`
   transition: opacity 0.3s;
   &:hover,
   &:focus {
-    opacity: 0.5;
+    opacity: 0.9;
   }
 `;
 
