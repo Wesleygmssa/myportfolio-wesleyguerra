@@ -26,8 +26,8 @@ const About: React.FC = () => {
               conhecimentos e desafios 🚀.
             </p>
             <span>
-              Se você quiser saber mais sobre mim acesse os links das redes
-              sociais.
+              "Busque a vida que você sonha, mas não deixe de viver a vida que
+              você tem."
               {/* <Link to="/contact/form"> clique aqui </Link> */}
             </span>
           </Banner>

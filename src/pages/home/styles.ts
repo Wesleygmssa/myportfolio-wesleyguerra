@@ -11,8 +11,8 @@ export const Banner = styled.section`
     font-size: 80px;
     text-align: center;
     letter-spacing: 2px;
-    color: #8357e5;
-    /* color: #fff; */
+    /* color: #8357e5; */
+    color: #fff;
   }
 
   p {

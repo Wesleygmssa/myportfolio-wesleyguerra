@@ -44,11 +44,12 @@ export const Banner = styled.section`
     letter-spacing: 2px;
   }
   span {
+    text-align: center;
     margin: 20px;
     margin-bottom: 0px;
-    font-weight: bold;
+    font-weight: 500;
     color: #fff;
-
+    width: 100%;
     letter-spacing: 2px;
     font-size: 14px;
 

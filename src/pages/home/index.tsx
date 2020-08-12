@@ -8,6 +8,7 @@ import {
   FaNpm,
   FaYarn,
   FaDatabase,
+  FaCss3,
 } from "react-icons/fa";
 
 const Home: React.FC = () => {
@@ -19,24 +20,27 @@ const Home: React.FC = () => {
             <h1>Olá, Sou Wesley</h1>
             <p>Desenvolvedor Full Stack</p>
             <span>
-              <a target="_blank">
-                <FaHtml5 size={40} />
+              {/* <a target="_blank">
+                <FaHtml5 size={40} style={{ color: "#EB3C32" }} />
               </a>
               <a target="_blank">
-                <FaReact size={40} />
+                <FaCss3 size={40} style={{ color: "#016EB6" }} />
               </a>
               <a target="_blank">
-                <FaNodeJs size={40} />
+                <FaReact size={40} style={{ color: "#7AE3F8" }} />
               </a>
               <a target="_blank">
-                <FaNpm size={40} />
+                <FaNodeJs size={40} style={{ color: "#7CB701" }} />
               </a>
               <a target="_blank">
-                <FaYarn size={40} />
+                <FaNpm size={40} style={{ color: "#EB3C32" }} />
               </a>
               <a target="_blank">
-                <FaDatabase size={40} />
+                <FaYarn size={40} style={{ color: "#00F67E" }} />
               </a>
+              <a target="_blank">
+                <FaDatabase size={40} style={{ color: "#F6B524" }} />
+              </a> */}
             </span>
           </div>
         </Banner>

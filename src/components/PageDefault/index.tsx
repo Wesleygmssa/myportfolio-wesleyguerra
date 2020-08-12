@@ -2,7 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import Footer from "../Footer";
 import Header from "../Header";
-// import Zap from "../Zap";
+import Zap from "../Zap";
 
 const apperFromCenter = keyframes`
  from{
@@ -25,7 +25,7 @@ const PageDefault: React.FC = ({ children }) => {
       <Header />
       <AnimationContainer>{children}</AnimationContainer>
       <Footer />
-      {/* <Zap /> */}
+      <Zap />
     </>
   );
 };

@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     try {
       const schema = Yup.object().shape({
         name: Yup.string().required("Nome obrigatório"),
-        email: Yup.string().required().email("E-mail obrigatório"),
+        email: Yup.string().email("Digite um e-mail válido"),
         // text: Yup.string().required(),
       });
 
