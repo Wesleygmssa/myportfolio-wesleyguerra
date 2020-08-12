@@ -10,8 +10,9 @@ export const Cards = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  min-height: 100vh;
   justify-content: center;
+  padding-bottom: 60px;
 
   .card {
     .disabled {

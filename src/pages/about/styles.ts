@@ -38,6 +38,7 @@ export const Banner = styled.section`
     opacity: 0.8;
     text-align: justify;
     padding: 0px 20px;
+    padding-bottom: 60px;
   }
   span {
     margin: 20px;
