@@ -14,13 +14,13 @@ const Zap: React.FC = () => {
         <img src={ZapImg} alt="Github Explorer" />
       </a> */}
 
-      <a href="https://twitter.com/guerra_ssa">
+      <a href="https://twitter.com/guerra_ssa" target="_blank">
         <FiTwitter size={25} />
       </a>
-      <a href="https://github.com/Wesleygmssa">
+      <a href="https://github.com/Wesleygmssa" target="_blank">
         <FiGithub size={25} />
       </a>
-      <a href="https://www.linkedin.com/in/wesleyguerra09/">
+      <a href="https://www.linkedin.com/in/wesleyguerra09/" target="_blank">
         <FiLinkedin size={25} />
       </a>
 
