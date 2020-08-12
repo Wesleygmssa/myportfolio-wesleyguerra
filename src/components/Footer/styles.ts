@@ -8,7 +8,7 @@ export const FooterBase = styled.footer`
   padding: 5px;
   position: relative;
 
-  /* a {
+  a {
     display: flex;
     padding: 10px;
     border-radius: 8px;
@@ -22,7 +22,7 @@ export const FooterBase = styled.footer`
     letter-spacing: 2px;
 
     & + a {
-      margin-left: 24px;
+      margin-left: 8px;
     }
 
     &:hover {
@@ -32,5 +32,5 @@ export const FooterBase = styled.footer`
 
     svg {
     }
-  } */
+  }
 `;
