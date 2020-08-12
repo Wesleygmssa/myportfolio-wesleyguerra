@@ -16,7 +16,10 @@ const Footer: React.FC = () => {
         <a href="https://www.linkedin.com/in/wesleyguerra09/" target="_blank">
           <FiLinkedin size={25} />
         </a>
-        <a href="https://www.linkedin.com/in/wesleyguerra09/" target="_blank">
+        <a
+          href="https://api.whatsapp.com/send?phone=5571992538054&text=Ol%C3%A1%20meu%20nome%20%C3%A9"
+          target="_blank"
+        >
           <FaWhatsapp size={25} />
         </a>
       </FooterBase>

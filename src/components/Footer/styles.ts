@@ -4,6 +4,7 @@ export const FooterBase = styled.footer`
   margin-top: 20px;
   display: flex;
   justify-content: center;
+
   padding: 5px;
   position: relative;
 

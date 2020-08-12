@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { shade } from "polished";
 
 export const Banner = styled.section`
   height: 70vh;
@@ -28,11 +27,13 @@ export const Banner = styled.section`
     display: flex;
     justify-content: center;
     margin-top: 24px;
+
     a {
       color: #808080;
+      opacity: 0.9;
     }
     a + a {
-      margin-left: 32px;
+      margin-left: 16px;
     }
   }
 `;

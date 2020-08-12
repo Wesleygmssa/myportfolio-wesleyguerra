@@ -7,8 +7,8 @@ const Header: React.FC = () => {
   return (
     <HeaderBase>
       {/* <div>
-              <img src={logo} alt="Github Explorer" />
-        </div> */}
+        <img src={logo} alt="Github Explorer" />
+      </div> */}
 
       <div>
         <Link to="/">HOME</Link>
