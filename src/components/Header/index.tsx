@@ -14,6 +14,7 @@ const Header: React.FC = () => {
         <Link to="/">HOME</Link>
         <Link to="/about">SOBRE</Link>
         <Link to="/project">PROJETOS</Link>
+        <Link to="/contact/form">CONTATO</Link>
         {/* <Link to="/project">SERVIÇOS</Link> */}
       </div>
     </HeaderBase>

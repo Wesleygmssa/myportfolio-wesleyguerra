@@ -12,15 +12,18 @@ export const Banner = styled.section`
     text-align: center;
     letter-spacing: 2px;
     color: #8357e5;
+    /* color: #fff; */
   }
 
   p {
+    color: #fff;
+    /* color: #8357e5; */
     font-size: 40px;
     font-weight: normal;
     text-align: center;
     margin-top: 16px;
     letter-spacing: 3px;
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   span {
@@ -29,7 +32,7 @@ export const Banner = styled.section`
     margin-top: 24px;
 
     a {
-      color: #808080;
+      color: #fff;
       opacity: 0.9;
     }
     a + a {

@@ -27,8 +27,9 @@ export const HeaderBase = styled.header`
     font-size: 12px;
     text-decoration: none;
     font-weight: bold;
-    color: #3a3a3a;
+    color: #fff;
     letter-spacing: 2px;
+    font-family: "Press Start 2P", cursive;
 
     &:hover {
       transition: 0.5s;

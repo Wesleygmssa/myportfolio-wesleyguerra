@@ -2,6 +2,30 @@ import Styled from "styled-components";
 import { shade } from "polished";
 
 export const Container = Styled.div`
+min-height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+
+  svg{
+    margin-right: 16px;
+  }
+}
+
+`;
+
+export const Content = Styled.div`
   background: #494949;
   display: flex;
   justify-content: center;
@@ -10,11 +34,11 @@ export const Container = Styled.div`
   margin: 0 auto;
   border-radius: 8px;
   width: 100%;
-  max-width: 600px;
-  height: 70vh;
   padding: 16px;
   margin-top: 24px;
   margin-bottom: 10%;
+  
+
 
   form{
     width: 100%;

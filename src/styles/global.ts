@@ -10,7 +10,7 @@ export default createGlobalStyle`
     }
 
     body{
-        background: #FFF url(${githubBackgourn}) no-repeat 70% top;
+        background: #494949 url(${githubBackgourn}) no-repeat 70% top;
         -webkit-font-smoothing: antialiased;
         height: 100%;
         position:relative;

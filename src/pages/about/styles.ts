@@ -29,25 +29,34 @@ export const Banner = styled.section`
     font-size: 40px;
     position: relative;
     padding: 20px;
+    color: #fff;
   }
 
   P {
+    color: #fff;
     width: 100%;
     max-width: 700px;
     line-height: 30px;
-    opacity: 0.8;
+    opacity: 0.9;
     text-align: justify;
     padding: 0px 20px;
     padding-bottom: 60px;
+    letter-spacing: 2px;
   }
   span {
     margin: 20px;
     margin-bottom: 0px;
     font-weight: bold;
+    color: #fff;
+
+    letter-spacing: 2px;
+    font-size: 14px;
 
     a {
       text-decoration: none;
       color: #8357e5;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 `;

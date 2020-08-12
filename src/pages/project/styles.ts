@@ -4,7 +4,9 @@ export const Title = styled.h1`
   color: #3a3a3a;
   max-width: 350px;
   margin-bottom: 40px;
-  color: #8357e5;
+  color: #fff;
+  line-height: 32px;
+  opacity: 0.8;
 `;
 export const Cards = styled.div`
   box-sizing: border-box;
@@ -12,16 +14,15 @@ export const Cards = styled.div`
   flex-wrap: wrap;
   min-height: 100vh;
   justify-content: center;
-  padding-bottom: 60px;
 
   .card {
     .disabled {
       opacity: 0.5;
     }
-
+    background-color: #ffffffff;
     width: 300px;
     max-height: 420px;
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 5px;
@@ -62,8 +63,9 @@ export const Cards = styled.div`
         padding: 0px 8px;
         text-align: justify;
         height: 100px;
-        color: #616161;
+        color: black;
         font-weight: 700;
+        opacity: 0.8;
       }
     }
 
