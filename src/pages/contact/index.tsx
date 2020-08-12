@@ -16,6 +16,7 @@ const Contact: React.FC = () => {
       });
 
       await schema.validate(data, {
+        //validation
         abortEarly: false,
       });
     } catch (err) {

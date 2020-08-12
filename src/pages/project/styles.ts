@@ -12,7 +12,7 @@ export const Cards = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
+  min-height: 60vh;
   justify-content: center;
 
   .card {
