@@ -19,7 +19,8 @@ a{
   font-size: 16px;
 
   svg{
-    margin-right: 16px;
+   
+ 
   }
 }
 
