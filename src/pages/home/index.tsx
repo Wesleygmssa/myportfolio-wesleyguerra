@@ -1,15 +1,6 @@
 import React from "react";
 import { Banner } from "./styles";
 import PageDefault from "../../components/PageDefault";
-import {
-  FaHtml5,
-  FaReact,
-  FaNodeJs,
-  FaNpm,
-  FaYarn,
-  FaDatabase,
-  FaCss3,
-} from "react-icons/fa";
 
 const Home: React.FC = () => {
   return (
