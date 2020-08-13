@@ -19,8 +19,7 @@ export const IconZap = styled.footer`
     font-weight: bold;
     color: #9466ff;
     background-color: #29292e;
-    margin-top: 2px;
-
+    margin-top: 3px;
     letter-spacing: 2px;
 
     &:hover {

@@ -25,18 +25,4 @@ export const Banner = styled.section`
     letter-spacing: 3px;
     opacity: 0.8;
   }
-
-  span {
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-
-    a {
-      color: #fff;
-      opacity: 0.9;
-    }
-    a + a {
-      margin-left: 16px;
-    }
-  }
 `;
