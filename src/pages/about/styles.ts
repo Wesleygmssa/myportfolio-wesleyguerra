@@ -46,7 +46,7 @@ export const Banner = styled.section`
   span {
     text-align: center;
     margin: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 24px;
     font-weight: 500;
     color: #fff;
     width: 100%;
