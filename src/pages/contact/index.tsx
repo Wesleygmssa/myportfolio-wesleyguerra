@@ -1,7 +1,14 @@
 import React, { useCallback, useRef, useState } from "react";
 import { Content, Container } from "./styles";
-import { FiLogIn, FiMail, FiUser, FiArrowLeft } from "react-icons/fi";
+import {
+  FiLogIn,
+  FiMail,
+  FiUser,
+  FiArrowLeft,
+  FiFileText,
+} from "react-icons/fi";
 import Input from "../../components/Input";
+import Textarea from "../../components/Textarea";
 import { Form } from "@unform/web";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
@@ -14,7 +21,8 @@ const Contact: React.FC = () => {
     try {
       const schema = Yup.object().shape({
         name: Yup.string().required("Nome obrigatório"),
-        email: Yup.string().email("Digite um e-mail válido"),
+        email: Yup.string().required("Digite um e-mail válido"),
+        textarea: Yup.string().required("Texto obrigatório"),
       });
 
       await schema.validate(data, {
@@ -36,7 +44,7 @@ const Contact: React.FC = () => {
         <Form ref={formRef} onSubmit={handleSubmit}>
           <Input name="name" icon={FiUser} type="text" placeholder="Nome" />
           <Input name="email" icon={FiMail} type="email" placeholder="E-mail" />
-          {/* <textarea name="text" placeholder="Digite o texto" /> */}
+          <Textarea name="textarea" placeholder="Digite o texto" />
 
           <button type="submit">
             <FiLogIn />

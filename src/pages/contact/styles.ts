@@ -37,11 +37,13 @@ export const Content = Styled.div`
   padding: 16px;
   margin-top: 24px;
   margin-bottom: 10%;
+
   
 
 
   form{
     width: 100%;
+ 
   }
 
   h1 {
@@ -59,6 +61,7 @@ export const Content = Styled.div`
     padding: 16px;
     width: 100%;
     height: 200px;
+ 
 
     &::placeholder {
       color: #666360;
@@ -83,6 +86,7 @@ export const Content = Styled.div`
 
     svg {
       margin-right: 8px;
+        
     }
 
     &:hover {
