@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
     try {
       const schema = Yup.object().shape({
         name: Yup.string().required("Nome obrigatório"),
-        email: Yup.string().required("Digite um e-mail válido"),
+        email: Yup.string().required().email("Digite um e-mail válido"),
         textarea: Yup.string().required("Texto obrigatório"),
       });
 

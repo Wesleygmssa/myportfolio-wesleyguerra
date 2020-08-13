@@ -19,7 +19,7 @@ export const Cards = styled.div`
     .disabled {
       opacity: 0.5;
     }
-    background-color: #ffffffff;
+    background-color: #fff;
     width: 300px;
     max-height: 420px;
     border: 1px solid #fff;
@@ -32,7 +32,6 @@ export const Cards = styled.div`
     -webkit-box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
     box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
-
     .cardimg {
       position: relative;
       border-radius: 8px;
@@ -56,6 +55,7 @@ export const Cards = styled.div`
         text-align: center;
         padding: 16px 0px;
         font-size: 24px;
+        color: black;
       }
 
       p {
@@ -73,6 +73,7 @@ export const Cards = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      color: #566b84;
     }
   }
 `;

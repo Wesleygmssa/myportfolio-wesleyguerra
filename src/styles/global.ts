@@ -10,10 +10,11 @@ export default createGlobalStyle`
     }
 
     body{
-        background: #494949 url(${githubBackgourn}) no-repeat 70% top;
+        background: #1B242F url(${githubBackgourn}) no-repeat 70% top;
         -webkit-font-smoothing: antialiased;
         height: 100%;
         position:relative;
+        color: #F3F3F4;
        
     }
 
@@ -32,5 +33,6 @@ export default createGlobalStyle`
     }
     button{
     cursor: pointer;
+    
 }
 `;

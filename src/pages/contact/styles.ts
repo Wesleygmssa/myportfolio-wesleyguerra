@@ -27,7 +27,7 @@ a{
 `;
 
 export const Content = Styled.div`
-  background: #494949;
+  background: #10202B;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,12 +74,12 @@ export const Content = Styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #8357E5;
+    background: #566B84;
     height: 56px;
     border-radius: 10px;
     border: 0;
     padding: 0 16px;
-    color: #312e38;
+    color: #fff;
     width: 100%;
     font-weight: 500;
     margin-top: 24px;
@@ -91,7 +91,7 @@ export const Content = Styled.div`
     }
 
     &:hover {
-      background: ${shade(0.2, "#8357E5")};
+      background: ${shade(0.2, "#566B84")};
     }
   }
 `;
