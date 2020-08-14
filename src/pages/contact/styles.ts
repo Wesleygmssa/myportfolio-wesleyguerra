@@ -8,6 +8,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+padding:60px;
 
 a{
   display: flex;
@@ -40,7 +41,7 @@ export const Content = Styled.div`
   width: 100%;
   padding: 16px;
   margin-top: 24px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 
   
 

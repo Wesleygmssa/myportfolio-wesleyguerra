@@ -16,22 +16,19 @@ export const Cards = styled.div`
   justify-content: center;
 
   .card {
-    .disabled {
-      opacity: 0.5;
-    }
-    background-color: #fff;
+    background-color: #1b242f;
     width: 300px;
     max-height: 420px;
-    border: 1px solid #fff;
+    border: 1px solid #1b242f;
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
-    -moz-box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
-    box-shadow: 3px 9px 29px -13px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.75);
     .cardimg {
       position: relative;
       border-radius: 8px;
@@ -55,7 +52,7 @@ export const Cards = styled.div`
         text-align: center;
         padding: 16px 0px;
         font-size: 24px;
-        color: black;
+        color: white;
       }
 
       p {
@@ -66,6 +63,7 @@ export const Cards = styled.div`
         color: black;
         font-weight: 700;
         opacity: 0.8;
+        color: #fff;
       }
     }
 
@@ -73,7 +71,6 @@ export const Cards = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #566b84;
     }
   }
 `;
