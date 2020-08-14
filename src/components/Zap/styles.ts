@@ -32,8 +32,6 @@ export const IconZap = styled.div`
   }
 
   @media (max-width: 600px) {
-    a {
-      display: none;
-    }
+    display: none;
   }
 `;
