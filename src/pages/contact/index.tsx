@@ -1,31 +1,47 @@
-import React, { useCallback, useRef, useState } from "react";
+//components default react
+import React, { useCallback, useRef } from "react";
+
+//icons e styles
 import { Content, Container } from "./styles";
 import { FiLogIn, FiMail, FiUser, FiArrowLeft } from "react-icons/fi";
+
+// components default
 import Input from "../../components/Input";
+import Footer from "../../components/Footer";
 import Textarea from "../../components/Textarea";
+
+// dependencias
 import { Form } from "@unform/web";
 import { Link } from "react-router-dom";
-import * as Yup from "yup";
+import * as Yup from "yup"; // all validation
+
+//tipagem
 import { FormHandles } from "@unform/core";
-import Footer from "../../components/Footer";
 
 const Contact: React.FC = () => {
+  // direct access to the form
   const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = useCallback(async (data: object) => {
     try {
       const schema = Yup.object().shape({
         name: Yup.string().required("Nome obrigatório"),
-        email: Yup.string().required().email("Digite um e-mail válido"),
+        email: Yup.string()
+          .required("Email obrigatório")
+          .email("Digite um e-mail válido"),
         textarea: Yup.string().required("Texto obrigatório"),
       });
 
+      //validation return all err
       await schema.validate(data, {
-        //validation
         abortEarly: false,
       });
     } catch (err) {
       console.log(err);
+
+      formRef.current?.setErrors({
+        name: "Nome obrigatório",
+      });
     }
   }, []);
 

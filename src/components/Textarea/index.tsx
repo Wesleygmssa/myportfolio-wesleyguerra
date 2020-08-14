@@ -1,3 +1,4 @@
+//components default react
 import React, {
   TextareaHTMLAttributes,
   useEffect,
@@ -5,8 +6,13 @@ import React, {
   useState,
   useCallback,
 } from "react";
+//components default
 import { IconBaseProps } from "react-icons";
+
+//styles
 import { Container } from "./styles";
+
+//hooks
 import { useField } from "@unform/core";
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {

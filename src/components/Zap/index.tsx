@@ -1,7 +1,7 @@
 import React from "react";
 import { IconZap } from "./styles";
 import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
-import { FaWhatsapp, FaWpforms } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Zap: React.FC = () => {
   return (

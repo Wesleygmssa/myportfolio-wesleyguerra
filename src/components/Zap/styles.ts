@@ -31,7 +31,13 @@ export const IconZap = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
-    display: none;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70%;
+    z-index: 4;
+    right: 2px;
+    border-radius: 50%;
   }
 `;
