@@ -1,7 +1,6 @@
 import React from "react";
 import { Banner, Content } from "./styles";
 import PageDefault from "../../components/PageDefault";
-import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
@@ -28,7 +27,6 @@ const About: React.FC = () => {
             <span>
               "Busque a vida que você sonha, mas não deixe de viver a vida que
               você tem."
-              {/* <Link to="/contact/form"> clique aqui </Link> */}
             </span>
           </Banner>
         </Content>

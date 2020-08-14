@@ -12,7 +12,6 @@ const Home: React.FC = () => {
             <p>Desenvolvedor Full Stack</p>
           </div>
         </Banner>
-        {/* <span>Ferrramentas utilizadas para criação desse portfolio</span> */}
       </PageDefault>
     </>
   );

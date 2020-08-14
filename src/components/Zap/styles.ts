@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const IconZap = styled.footer`
+export const IconZap = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -31,8 +31,9 @@ export const IconZap = styled.footer`
     }
   }
 
-  /* img {
-    width: 50px;
-    border-radius: 50%;
-  } */
+  @media (max-width: 600px) {
+    a {
+      display: none;
+    }
+  }
 `;

@@ -17,13 +17,16 @@ a{
   color: #fff;
   font-weight: bold;
   font-size: 16px;
+  margin-right: 16px;
 
-  svg{
-   
- 
+  
+  .link{
+    margin-left: 16px;
+    width: 10%;
   }
-}
 
+  
+}
 `;
 
 export const Content = Styled.div`

@@ -8,7 +8,7 @@ export default createGlobalStyle`
         outline:0;
         box-sizing: border-box;
     }
-
+/* 1B242F */
     body{
         background: #1B242F url(${githubBackgourn}) no-repeat 70% top;
         -webkit-font-smoothing: antialiased;
@@ -28,8 +28,6 @@ export default createGlobalStyle`
         max-width: 980px;
         margin: 0 auto;
         height:100%;
-        /* border: 1px solid */
-        /* padding: 40px 20px;  */
     }
     button{
     cursor: pointer;

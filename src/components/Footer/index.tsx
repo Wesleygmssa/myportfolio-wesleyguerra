@@ -14,23 +14,6 @@ const Footer: React.FC = () => {
   return (
     <>
       <FooterBase>
-        {/* <a href="https://twitter.com/guerra_ssa">
-          <FiTwitter size={25} />
-        </a>
-        <a href="https://github.com/Wesleygmssa">
-          <FiGithub size={25} />
-        </a>
-        <a href="https://www.linkedin.com/in/wesleyguerra09/">
-          <FiLinkedin size={25} />
-        </a>
-
-        <a
-          href="https://api.whatsapp.com/send?phone=5571992538054&text=Ol%C3%A1%20meu%20nome%20%C3%A9"
-          target="_blank"
-        >
-          <FaWhatsapp size={25} />
-        </a> */}
-
         <a target="_blank">
           <FaHtml5 size={40} style={{ color: "#EB3C32" }} />
         </a>

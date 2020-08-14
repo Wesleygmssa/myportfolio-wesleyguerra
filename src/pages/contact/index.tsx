@@ -1,19 +1,12 @@
 import React, { useCallback, useRef, useState } from "react";
 import { Content, Container } from "./styles";
-import {
-  FiLogIn,
-  FiMail,
-  FiUser,
-  FiArrowLeft,
-  FiFileText,
-} from "react-icons/fi";
+import { FiLogIn, FiMail, FiUser, FiArrowLeft } from "react-icons/fi";
 import Input from "../../components/Input";
 import Textarea from "../../components/Textarea";
 import { Form } from "@unform/web";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { FormHandles } from "@unform/core";
-import Zap from "../../components/Zap";
 import Footer from "../../components/Footer";
 
 const Contact: React.FC = () => {
@@ -40,7 +33,7 @@ const Contact: React.FC = () => {
     <>
       <Container>
         <Link to="/">
-          <FiArrowLeft size={20} /> Voltar para home
+          <FiArrowLeft size={20} className="link" /> Voltar para home
         </Link>
         <Content>
           <h1>Entre em contato:</h1>
