@@ -31,7 +31,7 @@ a{
 `;
 
 export const Content = Styled.div`
-  background: #10202B;
+  background: #1B232E;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +42,9 @@ export const Content = Styled.div`
   padding: 16px;
   margin-top: 24px;
   margin-bottom: 5%;
+  -webkit-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
 
   
 

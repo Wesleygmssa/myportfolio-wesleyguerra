@@ -53,6 +53,7 @@ export const Cards = styled.div`
         padding: 16px 0px;
         font-size: 24px;
         color: white;
+        opacity: 0.8;
       }
 
       p {
@@ -62,8 +63,8 @@ export const Cards = styled.div`
         height: 100px;
         color: black;
         font-weight: 700;
-        opacity: 0.8;
         color: #fff;
+        opacity: 0.8;
       }
     }
 
