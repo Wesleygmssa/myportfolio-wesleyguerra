@@ -33,7 +33,6 @@ export const Container = styled.div<ContainerProps>`
       border-color: #8357e5;
     `}
 
-  
 
   input {
     background-color: transparent;

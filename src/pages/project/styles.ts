@@ -32,6 +32,8 @@ export const Cards = styled.div`
     .cardimg {
       position: relative;
       border-radius: 8px;
+      width: 100%;
+      height: 150px;
 
       img {
         border-radius: 8px;

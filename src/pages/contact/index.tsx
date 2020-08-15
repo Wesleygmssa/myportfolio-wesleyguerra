@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
       });
     } catch (err) {
       console.log(err);
-
+      // console.log(formRef.current?.setErrors);
       formRef.current?.setErrors({
         name: "Nome obrigatório",
       });
