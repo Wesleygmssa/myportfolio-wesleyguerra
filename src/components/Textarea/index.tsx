@@ -58,6 +58,8 @@ const Textarea: React.FC<TextareaProps> = ({ name, icon: Icon, ...rest }) => {
           ref={inputRef}
           {...rest}
         />
+
+        {error}
       </Container>
     </>
   );

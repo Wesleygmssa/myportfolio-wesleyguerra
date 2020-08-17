@@ -23,6 +23,7 @@ const Contact: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = useCallback(async (data: object) => {
+    console.log(data);
     try {
       const schema = Yup.object().shape({
         name: Yup.string().required("Nome obrigatório"),
@@ -38,9 +39,11 @@ const Contact: React.FC = () => {
       });
     } catch (err) {
       console.log(err);
-      // console.log(formRef.current?.setErrors);
+      //get name e insert o error
       formRef.current?.setErrors({
         name: "Nome obrigatório",
+        email: "E-mail Obrigatório",
+        textarea: "ERRO textarea ",
       });
     }
   }, []);
@@ -55,6 +58,7 @@ const Contact: React.FC = () => {
           <h1>Entre em contato:</h1>
           <Form ref={formRef} onSubmit={handleSubmit}>
             <Input name="name" icon={FiUser} type="text" placeholder="Nome" />
+
             <Input
               name="email"
               icon={FiMail}
