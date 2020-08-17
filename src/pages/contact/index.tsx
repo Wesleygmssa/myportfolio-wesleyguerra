@@ -15,10 +15,14 @@ import { Form } from "@unform/web";
 import { Link } from "react-router-dom";
 import * as Yup from "yup"; // all validation
 
-//tipagem
+//functions utils
+import getValidationErros from "../../utils/getValidationErros";
+
+//tipagem interface
 import { FormHandles } from "@unform/core";
 
 const Contact: React.FC = () => {
+  //
   // direct access to the form
   const formRef = useRef<FormHandles>(null);
 
@@ -38,13 +42,10 @@ const Contact: React.FC = () => {
         abortEarly: false,
       });
     } catch (err) {
-      console.log(err);
+      const erros = getValidationErros(err);
+
       //get name e insert o error
-      formRef.current?.setErrors({
-        name: "Nome obrigatório",
-        email: "E-mail Obrigatório",
-        textarea: "ERRO textarea ",
-      });
+      formRef.current?.setErrors(erros);
     }
   }, []);
 

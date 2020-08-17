@@ -21,7 +21,7 @@ const Input: React.FC<Inputprops> = ({ name, icon: Icon, ...rest }) => {
   const [isFilled, setIsFilled] = useState(false); //without focus
 
   //hooks form
-  const { fieldName, defaultValue, error, registerField } = useField(name);
+  const { fieldName, error, registerField } = useField(name);
 
   //focusing
   const handleInputFocus = useCallback(() => {
@@ -58,8 +58,7 @@ const Input: React.FC<Inputprops> = ({ name, icon: Icon, ...rest }) => {
           ref={inputRef}
           {...rest}
         />
-
-        {error}
+        {error} {/* ligado com formulario */}
       </Container>
     </>
   );
