@@ -29,6 +29,8 @@ const Contact: React.FC = () => {
   const handleSubmit = useCallback(async (data: object) => {
     console.log(data);
     try {
+      formRef.current?.setErrors({});
+
       const schema = Yup.object().shape({
         name: Yup.string().required("Nome obrigatório"),
         email: Yup.string()

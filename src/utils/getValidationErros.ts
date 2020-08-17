@@ -7,6 +7,7 @@ interface Errors {
 }
 
 export default function getValidationErros(err: ValidationError) {
+  //um objeto com erros
   const ValidationErrors: Errors = {};
 
   err.inner.forEach((error) => {
