@@ -20,14 +20,38 @@ import getValidationErros from "../../utils/getValidationErros";
 
 //tipagem interface
 import { FormHandles } from "@unform/core";
+import styled, { keyframes } from "styled-components";
 
 const Contact: React.FC = () => {
   //
   // direct access to the form
   const formRef = useRef<FormHandles>(null);
 
+  // animation
+  const apperFromCenter = keyframes`
+ from{
+   opacity: 0;
+   transform: translateX(10px);
+ }
+ to{
+   opacity: 1;
+   transform: translateX(-10px);
+ }
+`;
+
+  const AnimationContainer = styled.div`
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    animation: ${apperFromCenter} 0.9s;
+  `;
+
   const handleSubmit = useCallback(async (data: object) => {
-    console.log(data);
+    //validation
     try {
       formRef.current?.setErrors({});
 
@@ -57,25 +81,27 @@ const Contact: React.FC = () => {
         <Link to="/">
           <FiArrowLeft size={20} className="link" /> Voltar para home
         </Link>
-        <Content>
-          <h1>Entre em contato:</h1>
-          <Form ref={formRef} onSubmit={handleSubmit}>
-            <Input name="name" icon={FiUser} type="text" placeholder="Nome" />
+        <AnimationContainer>
+          <Content>
+            <h1>Entre em contato:</h1>
+            <Form ref={formRef} onSubmit={handleSubmit}>
+              <Input name="name" icon={FiUser} type="text" placeholder="Nome" />
 
-            <Input
-              name="email"
-              icon={FiMail}
-              type="email"
-              placeholder="E-mail"
-            />
-            <Textarea name="textarea" placeholder="Digite o texto" />
+              <Input
+                name="email"
+                icon={FiMail}
+                type="email"
+                placeholder="E-mail"
+              />
+              <Textarea name="textarea" placeholder="Digite o texto" />
 
-            <button type="submit">
-              <FiLogIn />
-              Enviar
-            </button>
-          </Form>
-        </Content>
+              <button type="submit">
+                <FiLogIn />
+                Enviar
+              </button>
+            </Form>
+          </Content>
+        </AnimationContainer>
         <Footer />
       </Container>
     </>
