@@ -59,6 +59,7 @@ const Textarea: React.FC<TextareaProps> = ({ name, icon: Icon, ...rest }) => {
           ref={inputRef}
         />
 
+        {/* Tooltip */}
         {error && (
           <Error title={error}>
             <FiAlertCircle color="#c53030" size={20} />

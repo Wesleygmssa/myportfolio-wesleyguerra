@@ -32,12 +32,13 @@ export const IconZap = styled.div`
   }
 
   @media (max-width: 700px) {
-    display: flex;
+    display: none;
+    /* display: flex;
     flex-direction: column;
     position: absolute;
     bottom: 70%;
     z-index: 4;
     right: 2px;
-    border-radius: 50%;
+    border-radius: 50%; */
   }
 `;
