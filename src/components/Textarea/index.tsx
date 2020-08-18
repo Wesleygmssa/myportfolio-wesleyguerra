@@ -10,10 +10,11 @@ import React, {
 import { IconBaseProps } from "react-icons";
 
 //styles
-import { Container } from "./styles";
+import { Container, Error } from "./styles";
 
 //hooks
 import { useField } from "@unform/core";
+import { FiAlertCircle } from "react-icons/fi";
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   name: string;
@@ -50,16 +51,19 @@ const Textarea: React.FC<TextareaProps> = ({ name, icon: Icon, ...rest }) => {
   }, [fieldName, registerField]);
   return (
     <>
-      <Container isFocused={isFocused} isFilled={isFilled}>
+      <Container isErrored={!!error} isFocused={isFocused} isFilled={isFilled}>
         {Icon && <Icon size={20} />}
         <textarea
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
           ref={inputRef}
-          {...rest}
         />
 
-        {error}
+        {error && (
+          <Error title={error}>
+            <FiAlertCircle color="#c53030" size={20} />
+          </Error>
+        )}
       </Container>
     </>
   );
