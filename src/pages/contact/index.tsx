@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
   const handleSubmit = useCallback(async (data: object) => {
     //validation
     try {
-      formRef.current?.setErrors({});
+      formRef.current?.setErrors({}); // pegando redferncia do form
 
       const schema = Yup.object().shape({
         name: Yup.string().required("Nome obrigatório"),
