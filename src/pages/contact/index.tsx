@@ -3,17 +3,21 @@ import React, { useCallback, useRef } from "react";
 
 //icons e styles
 import { Content, Container } from "./styles";
-import { FiLogIn, FiMail, FiUser, FiArrowLeft } from "react-icons/fi";
+import { FiLogIn, FiMail, FiUser, FiArrowLeft, FiHome } from "react-icons/fi";
 
 // components default
 import Input from "../../components/Input";
 import Footer from "../../components/Footer";
 import Textarea from "../../components/Textarea";
 
+import { useToast } from "../../hook/ToastContext";
+
 // dependencias
 import { Form } from "@unform/web";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import * as Yup from "yup"; // all validation
+// import api from '../../services/api';
+import axios from "axios";
 
 //functions utils
 import getValidationErros from "../../utils/getValidationErros";
@@ -23,9 +27,11 @@ import { FormHandles } from "@unform/core";
 import styled, { keyframes } from "styled-components";
 
 const Contact: React.FC = () => {
-  //
+  const history = useHistory();
   // direct access to the form
   const formRef = useRef<FormHandles>(null);
+
+  const { addToast } = useToast();
 
   // animation
   const apperFromCenter = keyframes`
@@ -50,39 +56,53 @@ const Contact: React.FC = () => {
     animation: ${apperFromCenter} 0.9s;
   `;
 
-  const handleSubmit = useCallback(async (data: object) => {
-    //validation
-    try {
-      formRef.current?.setErrors({}); // pegando redferncia do form
+  const handleSubmit = useCallback(
+    async (data: object) => {
+      //validation
+      try {
+        formRef.current?.setErrors({}); // pegando redferncia do form
 
-      const schema = Yup.object().shape({
-        name: Yup.string().required("Nome obrigatório"),
-        email: Yup.string()
-          .required("Email obrigatório")
-          .email("Digite um e-mail válido"),
-        textarea: Yup.string().required("Texto obrigatório"),
-      });
+        const schema = Yup.object().shape({
+          name: Yup.string().required("Nome obrigatório"),
+          email: Yup.string()
+            .required("Email obrigatório")
+            .email("Digite um e-mail válido"),
+          textarea: Yup.string().required("Texto obrigatório"),
+        });
 
-      //validation return all err
-      await schema.validate(data, {
-        abortEarly: false,
-      });
-    } catch (err) {
-      const erros = getValidationErros(err);
+        //validation return all err
+        await schema.validate(data, {
+          abortEarly: false,
+        });
 
-      //get name e insert o error
-      formRef.current?.setErrors(erros);
-    }
-  }, []);
+        await axios.post("http://localhost:3333/register", data);
+
+        history.push("/");
+        //
+      } catch (err) {
+        if (err instanceof Yup.ValidationError) {
+          const erros = getValidationErros(err);
+
+          //get name e insert o error
+          formRef.current?.setErrors(erros);
+        }
+
+        addToast();
+
+        //disparar um toast
+      }
+    },
+    [addToast]
+  );
 
   return (
     <>
       <Container>
-        <Link to="/">
-          <FiArrowLeft size={20} className="link" /> Voltar para home
-        </Link>
         <AnimationContainer>
           <Content>
+            <Link className="link" to="/">
+              <FiArrowLeft size={20} /> Voltar
+            </Link>
             <h1>Entre em contato:</h1>
             <Form ref={formRef} onSubmit={handleSubmit}>
               <Input name="name" icon={FiUser} type="text" placeholder="Nome" />
@@ -102,7 +122,6 @@ const Contact: React.FC = () => {
             </Form>
           </Content>
         </AnimationContainer>
-        <Footer />
       </Container>
     </>
   );

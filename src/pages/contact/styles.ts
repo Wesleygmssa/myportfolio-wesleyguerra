@@ -2,15 +2,13 @@ import Styled from "styled-components";
 import { shade } from "polished";
 
 export const Container = Styled.div`
-min-height: 100vh;
-width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-padding:60px;
 
-a{
+.link{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +16,14 @@ a{
   color: #fff;
   font-weight: bold;
   font-size: 16px;
-  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
 
-  
-  .link{
-    margin-left: 16px;
-    width: 10%;
+  svg{
+   margin-right: 20px; 
   }
+  }
+
 
   
 }
@@ -36,16 +35,12 @@ export const Content = Styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
   border-radius: 8px;
   width: 100%;
   padding: 16px;
-  margin-top: 24px;
-  margin-bottom: 5%;
   -webkit-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
-
+  -moz-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.75);
   
 
 

@@ -26,7 +26,7 @@ const Project: React.FC = () => {
   return (
     <>
       <PageDefault>
-        <Title>Explore repositórios no Github.</Title>
+        <Title>Em construção.</Title>
         {projects.length === 0 && <div>Loading...</div>}
         <Cards>
           {projects.map((project) => (
