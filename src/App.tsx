@@ -9,6 +9,7 @@ const App: React.FC = () => {
   return (
     <>
       <BrowserRouter>
+        {/* presente em toda aplicaçao */}
         <ToastProvider>
           <Routes />
         </ToastProvider>

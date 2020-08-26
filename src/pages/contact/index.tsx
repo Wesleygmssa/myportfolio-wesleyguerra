@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
     align-items: center;
     flex-direction: column;
     padding: 60px;
-    animation: ${apperFromCenter} 0.9s;
+    /* animation: ${apperFromCenter} 0.9s;3 */
   `;
 
   const handleSubmit = useCallback(
@@ -77,22 +77,29 @@ const Contact: React.FC = () => {
 
         await axios.post("http://localhost:3333/register", data);
 
+        addToast({
+          type: "success",
+          title: "Mensagem foi enviada com sucesso!",
+          description: "Logo retornarei a mensagem",
+        });
+
         history.push("/");
         //
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const erros = getValidationErros(err);
-
           //get name e insert o error
           formRef.current?.setErrors(erros);
         }
 
-        addToast();
-
-        //disparar um toast
+        addToast({
+          type: "error",
+          title: "Mensagem não foi enviada",
+          description: "Cheque todos os campos",
+        });
       }
     },
-    [addToast]
+    [Contact, addToast]
   );
 
   return (
