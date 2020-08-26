@@ -7,7 +7,6 @@ import { FiLogIn, FiMail, FiUser, FiArrowLeft, FiHome } from "react-icons/fi";
 
 // components default
 import Input from "../../components/Input";
-import Footer from "../../components/Footer";
 import Textarea from "../../components/Textarea";
 
 import { useToast } from "../../hook/ToastContext";
@@ -84,18 +83,20 @@ const Contact: React.FC = () => {
         });
 
         history.push("/");
-        //
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
-          const erros = getValidationErros(err);
+          const errors = getValidationErros(err);
           //get name e insert o error
-          formRef.current?.setErrors(erros);
+          formRef.current?.setErrors(errors);
+
+          return;
         }
 
         addToast({
           type: "error",
           title: "Mensagem não foi enviada",
-          description: "Cheque todos os campos",
+          description:
+            "O servidor encontrou um erro. Tente novamente mais tarde ...",
         });
       }
     },

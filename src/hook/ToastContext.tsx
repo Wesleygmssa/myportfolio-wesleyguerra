@@ -2,11 +2,6 @@ import React, { createContext, useContext, useCallback, useState } from "react";
 import ToastContainer from "../components/ToastContainer";
 import { uuid } from "uuidv4";
 
-interface ToastContextData {
-  addToast(message: Omit<ToastMessage, "id">): void;
-  removeToast(id: string): void;
-}
-
 export interface ToastMessage {
   id: string;
   type?: "success" | "error" | "info";
@@ -14,9 +9,13 @@ export interface ToastMessage {
   description?: string;
 }
 
+interface ToastContextData {
+  addToast(message: Omit<ToastMessage, "id">): void;
+  removeToast(id: string): void;
+}
+
 // criando uma variavel q recebe duas funções
 const ToastContext = createContext<ToastContextData>({} as ToastContextData);
-
 const ToastProvider: React.FC = ({ children }) => {
   const [messages, setMessages] = useState<ToastMessage[]>([]);
 
