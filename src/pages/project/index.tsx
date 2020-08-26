@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Title, Cards } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import ButtonLink from "../../components/LinkButton";
