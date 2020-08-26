@@ -3,7 +3,7 @@ import React, { useCallback, useRef } from "react";
 
 //icons e styles
 import { Content, Container } from "./styles";
-import { FiLogIn, FiMail, FiUser, FiArrowLeft, FiHome } from "react-icons/fi";
+import { FiLogIn, FiMail, FiUser, FiArrowLeft } from "react-icons/fi";
 
 // components default
 import Input from "../../components/Input";

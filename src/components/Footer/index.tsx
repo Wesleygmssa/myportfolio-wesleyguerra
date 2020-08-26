@@ -14,25 +14,25 @@ const Footer: React.FC = () => {
   return (
     <>
       <FooterBase>
-        <a target="_blank">
+        <a>
           <FaHtml5 size={40} style={{ color: "#EB3C32" }} />
         </a>
-        <a target="_blank">
+        <a>
           <FaCss3 size={40} style={{ color: "#016EB6" }} />
         </a>
-        <a target="_blank">
+        <a>
           <FaReact size={40} style={{ color: "#7AE3F8" }} />
         </a>
-        <a target="_blank">
+        <a>
           <FaNodeJs size={40} style={{ color: "#7CB701" }} />
         </a>
-        <a target="_blank">
+        <a>
           <FaNpm size={40} style={{ color: "#EB3C32" }} />
         </a>
-        <a target="_blank">
+        <a>
           <FaYarn size={40} style={{ color: "#00F67E" }} />
         </a>
-        <a target="_blank">
+        <a>
           <FaDatabase size={40} style={{ color: "#F6B524" }} />
         </a>
       </FooterBase>

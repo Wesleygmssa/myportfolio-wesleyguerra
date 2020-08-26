@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Title, Cards } from "./styles";
 import PageDefault from "../../components/PageDefault";
-// import api from "../../services/api";
 import ButtonLink from "../../components/LinkButton";
 import axios from "axios";
 
